@@ -6,13 +6,34 @@
     <title>:: develmj ::</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link href="stylizr.css" rel="stylesheet" type="text/css" />
+    <link href="/css/stylizr.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" src="/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script language="javascript" src="/js/jquery.tweet.js"
+    type="text/javascript"></script> 
+    <script type='text/javascript'>
+    $(document).ready(function(){
+        $(".tweet").tweet({
+            username: "bilikaage",
+            join_text: "auto",
+            avatar_size: 0,
+            count: 3,
+            auto_join_text_default: "",
+            auto_join_text_ed: "",
+            auto_join_text_ing: "",
+            auto_join_text_reply: "",
+            auto_join_text_url: "",
+            loading_text: "loading tweets..."
+        });
+    });
+</script>
+
   </head>
   <body>
 
     <div id="content">
       <div id="header">
-        <p><img src="n1268018646_30472925_8251935_60x60.jpg"> develmj </br></p>
+        <p><img src="/imgs/n1268018646_30472925_8251935_60x60.jpg"> develmj </br></p>
       </div>
 
       <div id="menu">
@@ -29,13 +50,7 @@
 	  <h2>Something here.. something there.. </h2>
 	  <p></p>
 	  <h3>What am I upto?</h3>
-	  <ul>
-	    <li>-&gt; Clojobox - My newest project. A clojure based
-	    live cd. </li>
-	    <li>-&gt; Home improvement - My wife has deemed the study
-	    as a &quot;hazard&quot; zone. Cleanup is scheduled.</li>
-	    <li>-&gt; Make text, add photos, you're free!</li>
-          </ul>
+          <div class="tweet"></div>
 	  <h3>Some exemples of my use.  </h3>
 	  <p><em>Blockotes</em></p>
 	  <blockquote>
@@ -64,12 +79,15 @@
 
 	  <h3>Find me:</h3>
 	  <p><img style="border-style:none" border="0"
-                  height="12" src="gmail_logo.gif"> &nbsp develmj (at
+                  height="12" src="/imgs/gmail_logo.gif"> &nbsp develmj (at
               gmail dot com)</p>
           <p><img style="border-style:none" border="0" height="16"
-                  src="facebook_button.png"> &nbsp (facebook dot
+                  src="/imgs/facebook_button.png"> &nbsp (facebook dot
               com) / mj.iyer
             </p>
+            <p><img style="border-style:none" border="0" height="18"
+                  src="/imgs/github-logo.png"> &nbsp (github dot
+              com) / develmj</p>
 	    <div id="footr">
               <p>Open Design by <a href="http://dinamoo.com/">dinamoo</a></p>
 	    </div>
