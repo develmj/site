@@ -143,8 +143,7 @@ font-weight:normal;
 	padding: 30px 20px 10px 20px;
 }
 #right img{
-border-top:1px solid #d7d7d7;
-background:#565656;
+border-top:0px solid #d7d7d7;
 	padding: 3px 0px 0px 0px;
 }
 #left, #center, #right {
